@@ -1,23 +1,23 @@
-class Letter
+class Letter//create a class called letter
 {
-  constructor(myChar, guessed)
+  constructor(myChar, guessed)//give it some attributes
   {
-    this.myChar = myChar;
-    this.guessed = guessed;
+    this.myChar = myChar;//this is the letter for this "letter"
+    this.guessed = guessed;//has it been guessed yet?
   }
-  guessMe(guess)
+  guessMe(guess)//is this the right letter?
   {
     if(guess.toLowerCase() == this.myChar.toLowerCase())
     {
-      	this.guessed = 1;
+      	this.guessed = 1;//if so, we'll set "guessed" to true
       	return(true);
     }
-    else
+    else//this is not the letter you're looking for
     {
     	return(false);
     }
   }
-  displayMe()
+  showMe()//display the character - if it's not guessed, show an underscore
   {
     if(this.guessed == 1)
     {
@@ -30,6 +30,6 @@ class Letter
   }
 }
 
-module.exports = {
+module.exports = {//make myself available to other code
   Letter: Letter
 }
