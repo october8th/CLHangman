@@ -21,7 +21,6 @@
   "homepage": "https://github.com/october8th/CLHangman#readme",
   "dependencies": {
     "inquirer": "^5.0.0",
-    "random-movie": "^1.4.3",
     "starwars-names": "^1.6.0"
   }
 }
